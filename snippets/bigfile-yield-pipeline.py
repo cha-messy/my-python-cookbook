@@ -4,6 +4,7 @@ import sys
 import re
 
 def normal_way():
+    # @generator
     def get_file(filenames):
         for name in filenames:
             yield open(name)
@@ -29,6 +30,7 @@ def normal_way():
     main()
 
 def pipeline_way():
+    # @pipline @generator
     def opener(filenames):
         for name in filenames:
             yield open(name)

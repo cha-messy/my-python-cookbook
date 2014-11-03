@@ -31,6 +31,7 @@ def create_class_by_type():
     assert by_type.name == 'bt'
 
 def use_metaclass_by_attribute():
+    # @metaclass
     def capitalize_attrs(class_name, class_parents, class_attrs):
         capitalize_attrs = dict( (name.capitalize(), attr) for name,attr in class_attrs.iteritems()\
                                  if not name.startswith('_'))
@@ -53,6 +54,7 @@ def use_metaclass_by_attribute():
 def use_metaclass_by_new():
     '''
     在type创建类之前做一些手脚
+    @metaclass
     '''
     class CapitalizeMetaClass(type):
         at = 'at_test'
