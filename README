@@ -1,0 +1,4 @@
+## Simple Search Usage
+
+    alias findsrc="find . -name '*.py' | xargs grep -n -o"
+    findsrc @generator

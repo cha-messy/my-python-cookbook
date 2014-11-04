@@ -30,7 +30,7 @@ def normal_way():
     main()
 
 def pipeline_way():
-    # @pipline @generator
+    # @pipeline @generator
     def opener(filenames):
         for name in filenames:
             yield open(name)
