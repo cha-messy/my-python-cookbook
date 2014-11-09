@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 def reallife_descriptor():
-    # @descriptor @装饰器    
+    # @descriptor @描述符    
     from werkzeug._internal import _missing
     
     class cached_property(object):
@@ -43,7 +43,7 @@ def reallife_descriptor():
             return value
 
 def descriptor_use():
-    # @descriptor @装饰器
+    # @descriptor @描述符
     class CacheProperty(object):
         _cached_value = ''
         def __get__(self, instance, klass):
